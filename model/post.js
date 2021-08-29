@@ -23,3 +23,7 @@ module.exports ={
         this.posts = this.posts.filter( item =>item.id != id)
     }
 }
+//falando a base númerica.
+//substring(), diz que queremos a string depois do segundo caracter e queros os próximos
+//nove caracteres, eles são representados pelos primeiro e segundo argumentos
+//respectivamente 
