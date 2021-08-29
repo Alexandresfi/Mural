@@ -4,7 +4,7 @@ const routes = express.Router();
 const cors = require("cors");
 
 const options = {
-    origin: "https://muraldenoticias.netlify.app/"
+    origin: "http://muraldenoticias.netlify.app/"
 }
 routes.use(cors(options))
 
