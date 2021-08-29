@@ -14,13 +14,13 @@
 <body>
 
     <head>
-        <div class="container mt-4">
+        <div class="container mt-4 ">
             <h3>Novo Post</h3>
 
-            <div>
-                <input type="text" name="title" id="title" placeholder="Título">
-                <input type="text" name="description" id="description" placeholder="Descrição">
-                <button onclick="newPost()">Salvar</button>
+            <div class="row">
+                <input type="text" name="title" id="title" placeholder="Título" class="form-control w-25 ">
+                <textarea name="description" id="description" placeholder="Descrição" cols="30" rows="5" class="form-control mt-2"></textarea>
+                <button class="btn btn-primary mt-2 w-25" onclick="newPost()">Salvar</button>
             </div>
 
             <h2 class="mt-4">Mural</h2>

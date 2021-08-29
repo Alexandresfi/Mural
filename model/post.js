@@ -2,8 +2,8 @@ module.exports ={
     posts: [
         {
             id: "dasdsadsa",
-            title: "testando o mural",
-            description: "Descrevendo o post"
+            title: "Olá",
+            description: "Sejam bem-vindos(as), eu sou Alexandre Nascimento e você está no meu primeiro projeto em Node.Js visite meu Linkedin <a href='https://www.linkedin.com/in/alexandre-nascimento-66692920a/'>Click aqui</a>"
         }
     ],
 

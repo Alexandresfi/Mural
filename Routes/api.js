@@ -1,6 +1,12 @@
 const express = require('express');
 const posts = require("../model/post")
 const routes = express.Router();
+const cors = require("cors");
+
+const options = {
+    origin: "https://muraldenoticias.netlify.app/"
+}
+routes.use(cors(options))
 
 routes.get('/all', (req , res)=>{
     res.json(JSON.stringify(posts.getAll()));
