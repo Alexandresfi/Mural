@@ -4,7 +4,7 @@ const routes = express.Router();
 const cors = require("cors");
 
 const options = {
-    origin: "https://muraldenoticias.netlify.app/"
+    origin: "http://localhost:3000"
 }
 routes.use(cors(options))
 
