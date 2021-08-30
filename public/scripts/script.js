@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 function updatePosts() {
     
-    fetch("http://muraldenoticias.netlify.app/api/all").then(res=>{
+    fetch("http://192.168.0.106:3000/api/all").then(res=>{
         return res.json();
     }).then(json=>{  
         let postElements = " ";
@@ -47,7 +47,7 @@ function newPost() {
         body: JSON.stringify(post)
     }
 
-    fetch("http://muraldenoticias.netlify.app/api/new", options).then(res=>{
+    fetch("http://192.168.0.106:3000/api/new", options).then(res=>{
         console.log(res)
         updatePosts();
         document.getElementById("title").value= " ";
@@ -66,7 +66,7 @@ function deletePost(event) {
         body: JSON.stringify(id)
     }
 
-    fetch("http://muraldenoticias.netlify.app/api/deleta", options).then(res=>{
+    fetch("http://192.168.0.106:3000/api/deleta", options).then(res=>{
         updatePosts();
     })
 }
